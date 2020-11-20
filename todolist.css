@@ -1,4 +1,4 @@
-/* Include the padding and border in an element's total width and height */
+/* Sisällytetään padding ja border elementin kaukk */
 * {
   box-sizing: border-box;
 }
@@ -71,9 +71,9 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  background-color: #72f436;
   padding: 30px 40px;
-  color: white;
+  color: rgb(14, 1, 1);
   text-align: center;
 }
 
