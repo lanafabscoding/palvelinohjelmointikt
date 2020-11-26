@@ -1,48 +1,54 @@
-/* Sisällytetään padding ja border elementin kaukk */
+/*Tämä on valmis pohja jonka löysin w3schoolsista. Tuntuu, että pääsen tässä jotenkin eteenpäin kun käytän valmista pohjaa.*/
+/* Sisällytetään padding ja border elementin totaali pituuteen ja leveyteen  */
 * {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
+/*Määritellään nätimpi fontti*/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Poistetaan listalta marginaalit ja paddingit */
 ul {
   margin: 0; 
   padding: 0;
 }
 
-/* Style the list items */
+/* List itemien muotoilu */
 ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: #eee;
+  background: rgb(235, 141, 199);
   font-size: 18px;
   transition: 0.2s;
 
-  /* make the list items unselectable */
+  /* list itemeitä ei voi voi valita */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* Parittomille listelementeille eri väri kuin parillisille */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: #e9b6e9;
 }
 
-/* Darker background-color on hover */
+/* Kun hoveroi hiirellä lista itemin päälle, väri muuttuu */
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
+/* Kun itemiä klikataan, lisää taustaväri ja korosta teksiä */
 ul li.checked {
-  background: #888;
+  background: rgb(238, 145, 247);
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/* Lisää check-merkki kun itemiä klikataan */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -56,7 +62,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
+/* Poistonapin muotoilu */
 .close {
   position: absolute;
   right: 0;
@@ -69,11 +75,11 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
+/* Headerin muotoilu */
 .header {
-  background-color: #72f436;
+  background-color: #740c62;
   padding: 30px 40px;
-  color: rgb(14, 1, 1);
+  color: rgb(248, 246, 246);
   text-align: center;
 }
 
@@ -84,7 +90,7 @@ ul li.checked::before {
   clear: both;
 }
 
-/* Style the input */
+/* Input-kentän muotoilu */
 input {
   margin: 0;
   border: none;
@@ -92,18 +98,18 @@ input {
   width: 75%;
   padding: 10px;
   float: left;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-/* Style the "Add" button */
+/* Add buttonin muotoilu */
 .addBtn {
   padding: 10px;
   width: 25%;
   background: #d9d9d9;
-  color: #555;
+  color: rgb(92, 3, 52);
   float: left;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;
