@@ -1,15 +1,16 @@
-/* Sisällytetään padding ja border elementin kaukk */
+/*Tämä on valmis pohja jonka löysin w3schoolsista. Tuntuu, että pääsen tässä jotenkin eteenpäin kun käytän valmista pohjaa.*/
+/* Sisällytetään padding ja border elementin totaali pituuteen ja leveyteen  */
 * {
   box-sizing: border-box;
 }
 
-/* Remove margins and padding from the list */
+/* Poistetaan listalta marginaalit ja paddingit */
 ul {
   margin: 0; 
   padding: 0;
 }
 
-/* Style the list items */
+/* List itemien muotoilu */
 ul li {
   cursor: pointer;
   position: relative;
