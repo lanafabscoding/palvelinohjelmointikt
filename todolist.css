@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/*Määritellään nätimpi fontti*/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Poistetaan listalta marginaalit ja paddingit */
 ul {
   margin: 0; 
