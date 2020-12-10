@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kirstin appi</title>
+        <title>New User</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -16,7 +16,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id= "users"></div>
-        <script src="front.js" async defer></script>
+        <h1>Add a new user</h1>
+        <form method="POST" action="/newUser">
+            <label for="firstname"><input type="text" name="firstname" id="firstname"></input></label>
+            <label for="lastname"><input type="text" name="lastname" id="lastname"></input></label>
+            <label for="dob"><input type="date" name="dob" id="dob"></input></label>
+            <input type="submit" value="Add">
+        </form>
+              
+    <script src="front.js" async defer></script>
     </body>
 </html>
