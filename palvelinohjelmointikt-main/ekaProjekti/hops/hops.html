@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HOPS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="hops.css">
+</head>
+<body>
+    <h1>HOPS</h1>
+    <from action="">
+        <input type="text" placeholder="opintojakson nimi" id="nimi">
+        <input type ="text" placeholder="laajuus" id="Laajuus">
+        <select name="Ajoitus" id="ajoitus">
+            <option value="">--valitse ajoitus--</option>
+            <option value="syksy2020">Syksy 2020</option>
+            <option value="kevat2021">Kevät 2021</option>   
+        </select>   
+        <button id="lisaaKurssi">Lisää</button>
+    </from>
+    <h2>Suunnitellut opintojaksot</h2>
+    <table>
+        <tr>
+            <th>Opintojakso</th>
+            <th>Laajuus</th>
+            <th>Ajoitus</th>
+        </tr>
+    </table id="opintoJaksoTable">
+    <h2>Opintopisteitä yhteensä <span id="opintopisteitaYhteensa"></span></h2>
+    <script src="hops.js"></script>
+</body>
+</html>
