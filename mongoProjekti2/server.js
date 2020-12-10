@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 //Ota express käyttöön
 express = require("express");
 const app = express();
+//Määritä staattisten tiedostojen hakemisto
+app.use(express.static("public"));
 //Ota users käyttöön
 const user = require("./user.js");
 //Luo connectionstringille vakio
