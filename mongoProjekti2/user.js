@@ -4,10 +4,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 //Luodaan user-skeema 
 let user = new Schema ( {
-    lastname: {
-        type:String
+    list_items: {
+        type:Array
     },
-    firstaname: {
+    firstname: {
         type:String
     },
     DOB: {
@@ -19,9 +19,9 @@ let user = new Schema ( {
 
 }, 
 
-    { collection: "users"}
+    { collection: "todolist"}
 
 );
 
 //Tarjoa pääsy tähän
-module.exports = mongoose.model("users", user);
+module.exports = mongoose.model("todolist", user);
