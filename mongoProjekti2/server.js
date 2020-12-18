@@ -6,8 +6,8 @@ const BodyParser = require("body-parser")
 express = require("express");
 const app = express();
 
-//Ota users käyttöön
-const user = require("./todolist.js");
+//Ota todolist käyttöön
+const todolist = require("./todolist.js");
 //Luo connectionstringille vakio
 const uri = "mongodb+srv://dbLana:moneyWellSpent!5@cluster0.umjne.mongodb.net/todolistdata?retryWrites=true&w=majority";
 //Muodostetaan tietokantayhteys 

@@ -16,4 +16,4 @@ let todolist = new Schema ( {
 );
 
 //Tarjoa pääsy tähän
-module.exports = mongoose.model("todolist", user);
+module.exports = mongoose.model("todolist", todolist);
