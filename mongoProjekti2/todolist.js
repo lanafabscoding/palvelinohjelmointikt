@@ -3,19 +3,11 @@ const mongoose = require("mongoose");
 //Luodaan skeema
 const Schema = mongoose.Schema;
 //Luodaan user-skeema 
-let user = new Schema ( {
+let todolist = new Schema ( {
     list_items: {
         type:Array
     },
-    firstname: {
-        type:String
-    },
-    DOB: {
-        type: Date
-    },
-    street_address: {
-        type:String
-    }
+    
 
 }, 
 

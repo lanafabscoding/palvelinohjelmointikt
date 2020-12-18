@@ -7,7 +7,7 @@ express = require("express");
 const app = express();
 
 //Ota users käyttöön
-const user = require("./user.js");
+const user = require("./todolist.js");
 //Luo connectionstringille vakio
 const uri = "mongodb+srv://dbLana:moneyWellSpent!5@cluster0.umjne.mongodb.net/todolistdata?retryWrites=true&w=majority";
 //Muodostetaan tietokantayhteys 
@@ -16,7 +16,7 @@ mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true});
 const db = mongoose.connection;
 //Näyt ilmoitus jos yhteys ok
 db.once("open", function() {
-  
+    console.log("Tietokantayhteys avattu");
 });
 //Aseta määritykset express-palvelimelle
 //staattinen hakemisto
