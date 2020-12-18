@@ -2,13 +2,12 @@
 const mongoose = require("mongoose");
 //Luodaan skeema
 const Schema = mongoose.Schema;
-//Luodaan user-skeema 
+//Luodaan todolist-skeema 
 let todolist = new Schema ( {
     list_items: {
         type:Array
-    },
+    }
     
-
 }, 
 
     { collection: "todolist"}

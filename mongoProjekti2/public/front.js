@@ -1,10 +1,10 @@
 var xmlhttp = new XMLHttpRequest(); 
-xmlhttp.open("GET", "/users", true); 
+xmlhttp.open("GET", "/todolist", true); 
 xmlhttp.send();
 
 xmlhttp.onreadystatechange= function () {
     if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-        let users= JSON.parse(xmlhttp.response)
+        document.getElementById("myUL").innerHTML= xmlhttp.responseText;
     }
 
 }

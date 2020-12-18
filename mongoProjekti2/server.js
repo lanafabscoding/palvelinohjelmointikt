@@ -24,9 +24,9 @@ app.use(express.static("./public"));
 //Käytä bodyparseria lomakedatan käsittelyssä
 app.use(BodyParser.urlencoded({extended:false}));
 //Kirjoita get-funktio
-app.get('/users', function(req, res) {
+app.get('/todolist', function(req, res) {
     //Hae käyttäjät tietokannasta
-    user.find(req.query, function(err, result) {
+    todolist.find(req.query, function(err, result) {
         if (err) {
             res.send(err);
         } else {
@@ -41,7 +41,7 @@ app.post("/newUser", function (req, res) {
     //Varmuuden vuoksi poista _id
     delete req.body._id;
     //Lisää collectioniin uusi käyttäjä
-    db.collection("users").insertOne(req.body);
+    db.collection("todolist").insertOne(req.body);
     res.send("User added with following data:" + JSON.stringify(req.body));
 });
 //Laitetaan palvelin kuuntelemaan porttia 8080
