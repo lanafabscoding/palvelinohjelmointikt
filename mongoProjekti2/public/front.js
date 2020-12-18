@@ -4,8 +4,8 @@ xmlhttp.send();
 
 xmlhttp.onreadystatechange= function () {
     if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-        document.getElementById("myUL").innerHTML= xmlhttp.responseText;
-    }
+      document.getElementById("myUL").innerHTML= xmlhttp.responseText;
+  
 
 }
 
